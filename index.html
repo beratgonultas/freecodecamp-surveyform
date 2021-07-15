@@ -1,0 +1,85 @@
+<head>
+  <title>
+      Physics Department Survey Form
+    </title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+<h1 id="title">
+  Physics Department Survey Form
+</h1>
+<p id="description">Thank you for joining our department's survey.</p>
+<fieldset>
+  <legend>Please answer the questions below.</legend>
+<form id="survey-form">
+  
+  <label id="name-label" for="name">Name:</label>
+  <input id="name" placeholder="Enter your name" type="text" required></br>
+
+  <label id="email-label" for="email">Email:</label>
+<input id="email" placeholder="Enter your email" type="email" required></br>
+
+  <label id="number-label" for="number">Age(optional):</label>
+  <input id="number" placeholder="Enter your age (15 to 100)" type="number" min="15" max="100"></br>
+  
+  <label for="dropdown">Choose your current role:</label>
+  <select id="dropdown">
+    <option value="undergraduate student">Undergraduate Student</option>
+    <option value="master student">Master Student</option>
+    <option value="phd student">PhD Student</option>
+    <option value="assistant professor">Assitant Professor</option>
+    <option value="associate professor">Associate Professor</option>
+    <option value="Professor">Professor</option>
+    <option disabled selected value>Select from the list</option>
+</select></br>
+ 
+<div id="radio"><p>Are you happy with the current administration?</p>
+    <label><input value="yes" type="radio" name="happiness" />Yes.</label>
+    <label><input value="so so" type="radio" name="happiness" />So so.</label>
+    <label><input value="no" type="radio" name="happiness" />No.</label>
+  </div>
+  
+<div id="interest"><p>What is your area of interests?</p>
+    
+    <input type="checkbox" id="int1" value="quantum mechanics">
+<label for="int1">Quantum Mechanics</label><br>
+    
+    <input type="checkbox" id="int2" value="statistical mechanics">
+<label for="int2">Statistical Mechanics</label><br>
+    
+    <input type="checkbox" id="int3" value="general relativity">
+<label for="int3">General Relativity</label><br>
+    
+    <input type="checkbox" id="int4" value="string theory">
+<label for="int4">String Theory</label><br>
+    
+    <input type="checkbox" id="int5" value="loop quantum gravity">
+<label for="int5">Loop Quantum Gravity</label><br>
+    
+    <input type="checkbox" id="int6" value="particle physics">
+<label for="int6">Particle Physics</label><br>
+    
+    <input type="checkbox" id="int7" value="optics">
+<label for="int7">Optics</label><br>
+    
+    <input type="checkbox" id="int8" value="solid state physics">
+<label for="int8">Solid State Physics</label><br>
+  
+  </div></br>
+<div>
+<label for="w3review">Would you like to add something:</label></br>
+
+<textarea id="add" 
+          placeholder="Enter your message here.." 
+          rows="4" 
+          cols="50"></textarea> 
+  </div>
+
+  <div class="form-group">
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </div>
+
+</form>
+</fieldset>
